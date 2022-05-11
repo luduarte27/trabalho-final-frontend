@@ -1,0 +1,30 @@
+.navegacao{
+    height: 20vh;
+}
+.container{
+    height: 91vh;
+   
+
+}
+.box-resultado{
+    
+    padding: 20px;
+}
+body{
+    background-image: linear-gradient(#bbb,#212529);
+}
+main{
+  
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow:8.5px 10px 15px rgba(0,0,0,0.2)
+    
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-weight: bold;
+    border-radius: 20px;
+}
