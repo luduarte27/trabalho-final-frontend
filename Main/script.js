@@ -8,6 +8,10 @@ function calcular() {
     let num1 = parseFloat(primeiroNumero.value);
     let num2 = parseFloat(segundoNumero.value);
 
+    if(isNaN(num1) || isNaN(num2)){
+        return;
+    }
+
     var opcao = select.options[select.selectedIndex].value;
 
     let subtracao = num1 - num2;
@@ -23,9 +27,8 @@ function calcular() {
         mostrarResultado(multiplicacao)
     }
     else if (opcao == "divisao") {
-        let continuar = true;
         if (num2 == 0) {
-            mostrarResultado("O divisor não pode ser 0")
+            alert("O divisor não pode ser 0")
         }
         else {
             mostrarResultado(divisao)
@@ -35,12 +38,9 @@ function calcular() {
 
 }
 function mostrarResultado(valor) {
-    if (isNaN(valor)) {
-        h1Resultado.textContent = ("");
-    } else {
-        h1Resultado.textContent = ("Resultado: " + valor);
-    }
+    h1Resultado.textContent = "Resultado: " + valor;
 }
+
 function limpar() {
     primeiroNumero.value = "";
     segundoNumero.value = "";
