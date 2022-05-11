@@ -1,6 +1,6 @@
-    body {
-    background-image: linear-gradient(#bbb, #212529);
-    height: 100vh;
+body {
+background-image: linear-gradient(#bbb, #212529);
+height: 100vh;
 }
 *{
     font-family: 'Roboto', sans-serif;
@@ -10,28 +10,11 @@ h1 {
     border-radius: 20px;
     color: white;
 }
-h6{
+h6, #genero, p {
     color: white;
 }
 
 .row {
     margin: 5px;
 }
-p{
-    color: white;
-}
-#genero{
-    color: white;
-}
 
-#footer {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-#whats {
-    margin: 15px;
-}
