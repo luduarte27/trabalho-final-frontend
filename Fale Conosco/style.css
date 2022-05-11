@@ -1,1 +1,14 @@
-    
+    body {
+    background-image: linear-gradient(#bbb, #212529);
+    height: 100vh;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-weight: bold;
+    border-radius: 20px;
+}
+h6{
+    color: white;
+}
