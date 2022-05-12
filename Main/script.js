@@ -2,6 +2,7 @@ let pResultado = document.getElementById("resultado");
 let primeiroNumero = document.getElementById("num1");
 let segundoNumero = document.getElementById("num2");
 let opcaoSelect = document.getElementById("select");
+let pHistorico = document.getElementById("historico");
 var historico = [];
 
 function calcular() {
@@ -21,16 +22,20 @@ function calcular() {
     let divisao = num1 / num2;
 
     let result = "";
+    let operador = "";
 
     if (opcaoValue == "soma") {
         result = soma;
-        mostrarResultado(soma)
+        operador = "+";
+        mostrarResultado(result)
     } else if (opcaoValue == "subtracao") {
         result = subtracao;
-        mostrarResultado(subtracao)
+        operador ="-";
+        mostrarResultado(result)
     } else if (opcaoValue == "multiplicacao") {
         result = multiplicacao;
-        mostrarResultado((multiplicacao.toFixed(2)))
+        operador ="x"
+        mostrarResultado((parseFloat(result).toFixed(2)))
     }
     else if (opcaoValue == "divisao") {
         if (num2 == 0) {
@@ -38,19 +43,21 @@ function calcular() {
         }
         else {
             result = divisao;
-            mostrarResultado((divisao.toFixed(2)))
+            operador ="/"
+            mostrarResultado((parseFloat(result).toFixed(2)))
         }
 
     }
 
     let calculo = {
         num1: num1,
+        operador: operador,
         num2: num2,
-        opcaoValue: opcaoValue,
         resultado: result
     }
-    historico.push(calculo)
-    console.log(historico);
+    historico.push(calculo)  
+    console.log(historico); 
+    
 }
 
 
@@ -63,4 +70,9 @@ function limpar() {
     segundoNumero.value = "";
     pResultado.value = "";
     opcaoSelect.value = "";
+}
+function varrerArray(){
+    for (i = 0; i < historico.length; i++){
+        pHistorico.value = Object.values(historico[i]);
+    }
 }

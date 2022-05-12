@@ -5,7 +5,7 @@
     
 }
 
-main {
+.main {
 
     background-color: #FFF;
     border-radius: 20px;
@@ -28,15 +28,26 @@ h1 {
     margin-left: 40px;
 }
 .imagem{
- 
+
     border-radius: 25px;
-    position: fixed;
+    position: relative;
     width: 250px;
     height: 380px;
-    bottom: 100px;
-    left: 950px;
-    background: url(../imag/bloco.png)
+    bottom: 371px;
+    left: 1059px;
+    background: url(../imag/bloco.png);
+
 }
+
+.box-historico{
+    width: 370px;
+    height: 325px;
+    border: rgb(243, 237, 237) solid ;
+    position: absolute;
+    left: -250px;
+    border-radius: 25px;
+    background-color: rgb(252, 248, 248);
+    }
 
 .caixinhaResult{
     width: 100px;
@@ -52,4 +63,13 @@ h1 {
     width: 250px;
     line-height: 30px;
     height: 30px;
+    left: 0px;
+}
+.texto-historico{
+    text-align: center;
+    
+}
+.historico{
+    width: 360px;
+
 }
