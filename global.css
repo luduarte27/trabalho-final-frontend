@@ -1,3 +1,8 @@
+body {
+    background-image: linear-gradient(#bbb, #212529);
+    height: 100vh;
+    overflow: hidden;
+    }
 #footer {
     padding-left: 0;
     padding-right: 0;

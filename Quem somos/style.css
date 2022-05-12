@@ -1,0 +1,21 @@
+
+.box {
+
+    background-color: white !important;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+}
+.row {
+    --bs-gutter-x: 0 !important;
+}
+h1, h2 {
+    margin: 15px;
+}
+#imagem {
+    margin-left: 125px;
+    margin-top: 50px;
+}
+.titulo {
+    color:#343a40;
+}
