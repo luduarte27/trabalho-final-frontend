@@ -1,0 +1,15 @@
+#footer {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#whatzapp, #twitter, #instagram {
+   margin: 15px;
+}
+
+#icons {
+    display: flex;
+}
