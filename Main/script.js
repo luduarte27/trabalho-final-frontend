@@ -84,8 +84,4 @@ function varrerArray(){
         historico.forEach(resultadoFor => elementoHistorico.value = resultadoFor.num1+" "+resultadoFor.operador
         +" "+resultadoFor.num2+" = "+resultadoFor.resultado)
 
-        
-    //     for (i = 0; i < historico.length; i++){
-    //     elementoHistorico.value = Object.values(historico[i]);
-    // }
 }

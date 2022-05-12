@@ -9,7 +9,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="../global.css">
-  <script src="./main.js" defer></script>
+  <script src="script.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
     defer></script>
@@ -63,30 +63,30 @@
         <label for="telefone">Telefone</label>
       </div>
     </section>
-    <section class="row" id="genero">
+    <section class="row" >
       <div>
         <label for="genero">Gênero</label>
         <label for="radio">
-          <input type="radio" name="genero" value="feminino">Feminino
+          <input type="radio" class="genero" name="genero" value="feminino" id="feminino">Feminino
         </label>
         <label for="radio">
-          <input type="radio" name="genero" value="masculino">Masculino
+          <input type="radio" class="genero" name="genero" value="masculino" id="masculino">Masculino
         </label>
         <label for="radio">
-          <input type="radio" name="genero" value="outro">Outro
+          <input type="radio" class="genero" name="genero" value="outro" id="outro">Outro
         </label>
       </div>
     </section>
     <section class="row">
       <div class="form-floating col-md-9 col-sm-12 mb-2">
-        <textarea class="form-control" placeholder="Deixe sua mensagem aqui" id="floatingTextarea"
+        <textarea class="form-control" placeholder="Deixe sua mensagem aqui" id="floating-text-area"
           style="height: 200px"></textarea>
-        <label for="floatingTextarea">Mensagem</label>
+        <label for="floatin-text-area">Mensagem</label>
       </div>
     </section>
     <section class="row">
       <div>
-        <button type="button" class="btn btn-secondary mb-1 ">Enviar</button>
+        <button type="button" class="btn btn-secondary mb-1 " onclick="limpar()" >Enviar</button>
       </div>
     </section>
     <div>
