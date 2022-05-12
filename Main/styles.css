@@ -9,8 +9,10 @@
 
 
 .box-resultado {
-
+    margin-left: -20px;
     padding: 20px;
+    border: 1px solid red;
+    
 }
 
 body {
@@ -21,7 +23,8 @@ main {
 
     background-color: #FFF;
     border-radius: 20px;
-    padding: 50px;
+    padding: 20px;
+    width: 70vw;
     box-shadow: 8.5px 10px 15px rgba(0, 0, 0, 0.2)
 }
 
@@ -32,4 +35,33 @@ main {
 h1 {
     font-weight: bold;
     border-radius: 20px;
+}
+.divMain{
+    margin-left: 40px;
+}
+.imagem{
+ 
+    border-radius: 25px;
+    position: fixed;
+    width: 250px;
+    height: 380px;
+    bottom: 100px;
+    left: 950px;
+    background: url(bloco.png)
+}
+
+.caixinhaResult{
+    width: 100px;
+    height: 30px;
+}
+
+.texto{
+
+    position: absolute;
+    color: aliceblue;
+    text-align: center;
+    top: 20px;
+    width: 250px;
+    line-height: 30px;
+    height: 30px;
 }

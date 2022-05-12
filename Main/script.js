@@ -1,4 +1,4 @@
-let h1Resultado = document.getElementById("resultado");
+let pResultado = document.getElementById("resultado");
 let primeiroNumero = document.getElementById("num1");
 let segundoNumero = document.getElementById("num2");
 let opcao = document.getElementById("select");
@@ -16,34 +16,34 @@ function calcular() {
 
     let subtracao = num1 - num2;
     let soma = num1 + num2;
-    let multiplicacao = num1 * num2;
-    let divisao = num1 / num2;
+    let multiplicacao = num1 * num2; 
+    let divisao = num1 / num2; 
 
     if (opcao == "soma") {
         mostrarResultado(soma)
     } else if (opcao == "subtracao") {
         mostrarResultado(subtracao)
     } else if (opcao == "multiplicacao") {
-        mostrarResultado(multiplicacao)
+        mostrarResultado((multiplicacao.toFixed(2)))
     }
     else if (opcao == "divisao") {
         if (num2 == 0) {
             alert("O divisor não pode ser 0")
         }
         else {
-            mostrarResultado(divisao)
+            mostrarResultado((divisao.toFixed(2)))
         }
 
     }
 
 }
 function mostrarResultado(valor) {
-    h1Resultado.textContent = "Resultado: " + valor;
+    pResultado.value = valor;
 }
 
 function limpar() {
     primeiroNumero.value = "";
     segundoNumero.value = "";
-    h1Resultado.textContent = "";
+    pResultado.value = "";
     opcao.value = "";
 }
