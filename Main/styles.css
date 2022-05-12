@@ -8,6 +8,7 @@
 body {
     background-image: linear-gradient(#bbb, #212529);
     height: 100vh;
+    
 }
 
 main {
@@ -15,8 +16,10 @@ main {
     background-color: #FFF;
     border-radius: 20px;
     padding: 20px;
+    margin-top: 70px;
     width: 70vw;
     box-shadow: 8.5px 10px 15px rgba(0, 0, 0, 0.2)
+
 }
 
 * {

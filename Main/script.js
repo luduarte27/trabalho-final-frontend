@@ -2,6 +2,7 @@ let pResultado = document.getElementById("resultado");
 let primeiroNumero = document.getElementById("num1");
 let segundoNumero = document.getElementById("num2");
 let opcao = document.getElementById("select");
+var historico = [];
 
 function calcular() {
 
@@ -20,7 +21,9 @@ function calcular() {
     let divisao = num1 / num2; 
 
     if (opcao == "soma") {
+        var adicionar = historico.push(soma);
         mostrarResultado(soma)
+        console.log(array.indexOf(historico, [0]))
     } else if (opcao == "subtracao") {
         mostrarResultado(subtracao)
     } else if (opcao == "multiplicacao") {
